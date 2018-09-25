@@ -1,0 +1,15 @@
+<div fxLayout="row" fxLayoutAlign="start center" class="toolbar-container">
+  Sistemas CR
+</div>
+<div fxLayout="row" fxLayoutAlign="center start" class="menu-container">
+	<div fxFlex="50" *ngFor="let m of menu">
+		<mat-card class="menu-card">
+			<mat-card-title>
+				{{m}}
+			</mat-card-title>
+      <mat-card-content>
+        <span class="mail"> software@nada.com.ar</span>
+      </mat-card-content>
+		</mat-card>
+	</div>
+</div>

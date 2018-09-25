@@ -1,0 +1,11 @@
+<form [formGroup]="xForm">
+  <mat-form-field style="width: 60%;">
+<input matInput formControlName="Importe" 
+                placeholder="Importe"
+                type="text"
+                (blur)="formatImporte()"
+                (focus)="unformatImporte()" />
+  </mat-form-field>
+</form>
+
+

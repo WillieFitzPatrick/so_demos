@@ -1,0 +1,22 @@
+.toolbar-container {
+  /* background-color: rgb(68,153,93); */
+  background-color: rgb(62,103,207);
+  height: 60px;
+  color: white;
+  padding: 10px;
+  font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+  font-size: 24px;
+}
+.menu-container {
+  height: 600px;
+  background-color: rgb(238,238,238);
+}
+.menu-card {
+  height: 120px;
+  margin: 10px;
+}
+
+.mail {
+   font-size: 14px;
+   color: rgb(74,74,74);
+}

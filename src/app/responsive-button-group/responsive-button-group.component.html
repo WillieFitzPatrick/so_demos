@@ -1,0 +1,20 @@
+<div *ngIf="showButtonGroup">
+	<mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+		<mat-button-toggle value="bold" buttonToggleGroup="fontStyle">Bold</mat-button-toggle>
+		<mat-button-toggle value="italic" buttonToggleGroup="fontStyle">Italic</mat-button-toggle>
+		<mat-button-toggle value="underline" buttonToggleGroup="fontStyle">Underline</mat-button-toggle>
+		<mat-button-toggle value="bold" buttonToggleGroup="fontStyle">Bold</mat-button-toggle>
+
+	</mat-button-toggle-group>
+</div>
+<div *ngIf="!showButtonGroup">
+	<mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+		<mat-button-toggle value="bold" buttonToggleGroup="fontStyle" [matMenuTriggerFor]="menu">Menu</mat-button-toggle>
+	</mat-button-toggle-group>
+	<mat-menu #menu="matMenu">
+		<button mat-menu-item><span>Bold</span></button>
+		<button mat-menu-item><span>Italic</span></button>
+		<button mat-menu-item><span>Underline</span></button>
+	</mat-menu>
+
+</div>

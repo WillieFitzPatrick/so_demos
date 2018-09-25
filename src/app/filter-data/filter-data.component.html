@@ -1,0 +1,18 @@
+<div>
+	<select [(ngModel)]="selectOpt" name="selectOpt" class="password-sort-select">
+<option>Select Team</option>
+<option *ngFor="let team of teams" [ngValue]="team.team_id">{{team.team_name}}</option>
+</select>
+</div>
+
+<ul class="company-display-data data-table passwords">
+	<li *ngFor="let password of passwords | filter: selectOpt" class="cf">
+		<a class="team-badge-wrapper" href="#"><span class="team-badge">{{password.team_name}}</span></a>
+		<span class="team-display-data team-description">{{password.description}}</span>
+		<span class="team-display-data team-url">{{password.url}}</span>
+		<span class="team-display-data team-username">{{password.username}}</span>
+		<span class="team-display-data team-password">{{password.password}}</span>
+		<!-- <a class="team-edit" routerLink="/detail/{{password.id}}"><span class="display-data">Edit</span></a> -->
+
+	</li>
+</ul>

@@ -1,0 +1,15 @@
+<h3>Not Excused {{year}}</h3>
+<div *ngFor="let person of people| year: year | excused: 'no'">
+
+      {{person.firstName}} {{person.lastName}} {{person.year}} {{person.excused}}
+
+</div>
+
+<h3>Excused {{year}}</h3>
+
+<div *ngFor="let person of people| year: year | excused: 'yes'">
+
+      {{person.firstName}} {{person.lastName}} {{person.year}} {{person.excused}}
+
+</div>
+
